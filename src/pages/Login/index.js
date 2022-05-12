@@ -12,6 +12,7 @@ export default function Login() {
         corrupti minima doloribus expedita, quam vel id sequi ducimus sint
         omnis!
       </p>
+      <button type="button">Send</button>
     </Container>
   );
 }
