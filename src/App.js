@@ -7,7 +7,7 @@ import Routes from './routes';
 
 function App() {
   return (
-    <Router navigator={history} location={history.location}>
+    <Router history={history}>
       <Header />
       <Routes />
       <GlobalStyles />

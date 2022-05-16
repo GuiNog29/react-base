@@ -1,14 +1,15 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Switch } from 'react-router-dom';
+import PrivateRoute from './PrivateRoute';
 
 import Login from '../pages/Login';
 import Page404 from '../pages/Page404';
 
 export default function RoutesSystem() {
   return (
-    <Routes>
-      <Route exact path="/" element={<Login />} />
-      <Route path="*" element={<Page404 />} />
-    </Routes>
+    <Switch>
+      <PrivateRoute exact path="/" component={Login} />
+      <PrivateRoute path="*" component={Page404} />
+    </Switch>
   );
 }
