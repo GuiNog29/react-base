@@ -29,10 +29,4 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'import/no-extraneous-dependencies': 0,
   },
-  'prettier/prettier': [
-    'error',
-    {
-      endOfLine: 'auto',
-    },
-  ],
 };
