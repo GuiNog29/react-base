@@ -1,7 +1,9 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+
 import { Title, Paragraph } from './styled';
 import { Container } from '../../styles/GlobalStyles';
+import * as exampleActions from '../../store/modules/example/actions';
 
 export default function Login() {
   const dispatch = useDispatch();
@@ -9,9 +11,7 @@ export default function Login() {
   function handleClick(e) {
     e.preventDefault();
 
-    dispatch({
-      type: 'BUTTON_CLICKED',
-    });
+    dispatch(exampleActions.clickButton());
   }
 
   return (
